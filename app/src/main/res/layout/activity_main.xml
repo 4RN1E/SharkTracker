@@ -41,7 +41,8 @@
     <LinearLayout
         android:id="@+id/bottomContainer"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@android:color/white"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,14 +78,12 @@
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/fab_refresh"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/purple_500"
+        android:background="@android:color/transparent"
         android:src="@android:drawable/ic_popup_sync"
-        android:tint="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/bottomContainer"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:tint="@android:color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

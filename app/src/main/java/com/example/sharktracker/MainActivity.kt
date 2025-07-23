@@ -175,7 +175,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Add markers for each shark ping
         pings.forEach { ping ->
-            val location = LatLng(ping.latitude, ping.longitude)
+           val location = LatLng(ping.latitude, ping.longitude)
             val marker = googleMap.addMarker(
                 MarkerOptions()
                     .position(location)
